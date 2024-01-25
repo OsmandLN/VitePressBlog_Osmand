@@ -3,9 +3,11 @@
   .title {
     font-size: 24px;
     /* css text gradient */
-    background: -webkit-linear-gradient(90deg,
-        #bd34fe 30%,
-        #41d1ff);
+    background: -webkit-linear-gradient(180deg,
+        orange 50%,
+        gold,
+        yellow,
+        lightyellow);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -13,9 +15,11 @@
     &:hover {
       transform: translateX(20px);
       transition: transform 0.2s ease-in-out;
-      background: -webkit-linear-gradient(180deg,
-          #bd34fe 30%,
-          #41d1ff);
+      background: -webkit-linear-gradient(0deg,
+          orange 50%,
+          gold,
+          yellow,
+          lightyellow);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
