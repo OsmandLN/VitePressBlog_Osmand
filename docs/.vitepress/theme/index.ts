@@ -5,9 +5,10 @@ import DefaultTheme from "vitepress/theme"
 import "./style.css"
 import "../theme/Customization/customizedStyle.scss"
 import SloganTyping from "./Customization/Components/SloganTyping.vue"
-
-// 自我介紹頁布局
+// About page layout
 import About from "./Customization/Layouts/AboutPage.vue"
+// Project Page layout
+import Projects from "./Customization/Layouts/ProjectsPage.vue"
 
 export default {
   extends: DefaultTheme,
@@ -21,5 +22,6 @@ export default {
   enhanceApp({ app, router, siteData }) {
     // 導入自訂布局
     app.component("about", About)
+    app.component("projects", Projects)
   }
 } satisfies Theme
