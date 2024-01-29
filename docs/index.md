@@ -19,12 +19,12 @@ hero:
 
 features:
   - title: About
-    details: 關於我的一些小事
+    details: 關於我
     link: /about/introduction
-  - title: Notes
-    details: 紀錄一些技術的東東
-    link: /notes
+  # - title: Notes
+  #   details: 紀錄一些技術的東東
+  #   link: /notes
   - title: Projects
-    details: side projects跟toys放置處
+    details: Side projects 放置處
     link: /projects
 ---
