@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "More effort, much better."
   # text: "Built with VitePress."
-  tagline: 及時努力，寫寫筆記
+  # tagline: 
   # image:
   # src: /bolt-solid.svg
   # alt:
@@ -19,12 +19,12 @@ hero:
 
 features:
   - title: About
-    details: 關於我
+    details: Simple self-introduction
     link: /about/introduction
   # - title: Notes
   #   details: 紀錄一些技術的東東
   #   link: /notes
   - title: Projects
-    details: Side projects 放置處
+    details: The place for side projects 
     link: /projects
 ---
