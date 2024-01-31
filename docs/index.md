@@ -26,5 +26,5 @@ features:
   #   link: /notes
   - title: Projects
     details: The place for side projects 
-    link: /projects
+    link: /projects/projects
 ---
