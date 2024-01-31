@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.NOjL19Y0.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"notes/ReactJS/article2.md","filePath":"notes/ReactJS/article2.md"}'),c={name:"notes/ReactJS/article2.md"};function r(o,s,n,i,l,p){return a(),t("div")}const m=e(c,[["render",r]]);export{d as __pageData,m as default};
