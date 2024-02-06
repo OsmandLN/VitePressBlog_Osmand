@@ -6,9 +6,9 @@ import "./style.css"
 import "../theme/Customization/customizedStyle.scss"
 import SloganTyping from "./Customization/Components/SloganTyping.vue"
 // About page layout
-import About from "./Customization/Layouts/AboutPage.vue"
+import About from "./Customization/Pages/AboutPage.vue"
 // Project Page layout
-import Projects from "./Customization/Layouts/ProjectsPage.vue"
+import Projects from "./Customization/Pages/ProjectsPage.vue"
 
 export default {
   extends: DefaultTheme,
