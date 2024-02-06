@@ -4,10 +4,10 @@ import type { Theme } from "vitepress"
 import DefaultTheme from "vitepress/theme"
 import "./style.css"
 import "../theme/Customization/customizedStyle.scss"
-import SloganTyping from "./Customization/Components/SloganTyping.vue"
-// About page layout
+// components
+// import SloganTyping from "./Customization/Components/SloganTyping.vue"
+// pages
 import About from "./Customization/Pages/AboutPage.vue"
-// Project Page layout
 import Projects from "./Customization/Pages/ProjectsPage.vue"
 
 export default {
@@ -15,7 +15,7 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       //     // https://vitepress.dev/guide/extending-default-theme#layout-slots
-      "nav-bar-content-before": () => h(SloganTyping)
+      // "home-hero-image": () => h(SloganTyping)
     })
   },
 
