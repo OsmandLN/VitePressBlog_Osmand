@@ -32,13 +32,21 @@
   }
 }
 
-/* social link 左邊白線 */
+/* social link 左邊線 */
 .VPSocialLinks {
   &.VPNavBarSocialLinks {
     &.social-links {
       &::before {
-        background-color: white;
+        background-color: grey;
       }
     }
+  }
+}
+
+.VPContent {
+  &.is-home {
+    background-image: url('../assets/blob_orange-gradient.svg');
+    background-size: 100%;
+    background-position: center;
   }
 }
