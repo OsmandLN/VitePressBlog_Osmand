@@ -64,7 +64,7 @@ const projectArray = ref([
     flex-wrap: wrap;
 
     &:hover {
-      background-color: rgba(orange, 0.8);
+      background-color: rgba(orange, 0.5);
     }
 
     .project-icon {
