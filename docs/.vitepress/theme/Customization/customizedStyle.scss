@@ -3,7 +3,7 @@
   .title {
     font-size: 24px;
     /* css text gradient */
-    background: -webkit-linear-gradient(180deg,
+    background: -webkit-linear-gradient(120deg,
         orange 50%,
         gold,
         yellow,
@@ -13,8 +13,6 @@
     -webkit-text-fill-color: transparent;
 
     &:hover {
-      transform: translateX(20px);
-      transition: transform 0.2s ease-in-out;
       background: -webkit-linear-gradient(0deg,
           orange 50%,
           gold,
@@ -45,8 +43,8 @@
 
 .VPContent {
   // &.is-home {
-    background-image: url('../assets/bbburst_random_shapes.svg');
-    background-size: cover;
-    background-position: center;
+  background-image: url('../assets/bbburst_random_shapes.svg');
+  background-size: cover;
+  background-position: center;
   // }
 }
