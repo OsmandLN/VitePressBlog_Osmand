@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress"
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "FE Fort",
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]], // 網站分頁頁籤icon
+  head: [["link", { rel: "icon", href: "favicon.ico" }]], // 網站分頁頁籤icon
   description: "Fort built with VitePress.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
