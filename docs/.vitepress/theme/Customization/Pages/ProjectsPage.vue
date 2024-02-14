@@ -1,24 +1,27 @@
 <script setup>
 import { ref } from 'vue';
+// import project icons
+import VueJS from '../Components/icons/VueJS.vue';
+import NodeJS from '../Components/icons/NodeJS.vue';
 
 const projectArray = ref([
   {
     projectId: 1,
-    projectIcon: '/.vitepress/theme/assets/vuejs_icon.svg',
+    projectIcon: 'VueJS',
     projectName: 'TechPro-official',
     projectDescription: 'Tech company website built with Vue.js.',
     projectUrl: 'https://github.com/OsmandLN/TechPro-official'
   },
   {
     projectId: 2,
-    projectIcon: '/.vitepress/theme/assets/vuejs_icon.svg',
+    projectIcon: 'VueJS',
     projectName: 'weather_info_vue_composition',
     projectDescription: 'Real time weather information website built with composition API.',
     projectUrl: 'https://github.com/OsmandLN/weather_info_vue_composition'
   },
   {
     projectId: 3,
-    projectIcon: '/.vitepress/theme/assets/node-js.svg',
+    projectIcon: 'NodeJS',
     projectName: 'BASEBALLSANITY',
     projectDescription: 'Company website (baseball related) built with Express Handlebars.',
     projectUrl: 'https://github.com/OsmandLN/Brand_website_project'
@@ -31,7 +34,8 @@ const projectArray = ref([
     <a :href="project.projectUrl" target="_blank" rel="noreferrer noopenner" class="project-card"
       v-for="project in projectArray" :key="project.projectId">
       <div class="project-icon">
-        <div class="icon" :style="{ backgroundImage: `url(${project.projectIcon})` }"></div>
+        <VueJS v-if="project.projectIcon === 'VueJS'" />
+        <NodeJS v-else-if="project.projectIcon === 'NodeJS'" />
       </div>
       <span class="project-name">{{ project.projectName }}</span>
       <p class="project-description">
@@ -67,21 +71,15 @@ const projectArray = ref([
     }
 
     .project-icon {
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       position: absolute;
       top: 45%;
-      left: 0;
+      left: 5px;
       display: flex;
       justify-content: center;
       align-items: center;
-
-      .icon {
-        width: 25px;
-        height: 25px;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-      }
+      margin-right: 5px;
     }
 
     .project-name {
@@ -97,7 +95,6 @@ const projectArray = ref([
       width: calc(100% - 30px - 10px);
       position: relative;
       left: 30px;
-
       font-size: 14px;
     }
   }
