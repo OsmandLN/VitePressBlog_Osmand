@@ -41,11 +41,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // background-image: url('../../assets/under_the_clouds.png');
-  // background-size: cover;
-  // background-position: center;
 
-  // margin: 0 auto;
   .personal-photo {
     width: 300px;
     border-radius: 80px;
@@ -115,17 +111,4 @@
     }
   }
 }
-
-// @media screen and (min-width: 2560px) {
-//   .portfolio {
-
-//     .self-introduction-wrapper,
-//     .programming-skills-wrapper {
-
-
-//       .self-introduction,
-//       .programming-skills {}
-//     }
-//   }
-// }
 </style>

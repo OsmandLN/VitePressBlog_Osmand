@@ -30,7 +30,6 @@ const projectArray = ref([
   <div class="projects-wrapper">
     <a :href="project.projectUrl" target="_blank" rel="noreferrer noopenner" class="project-card"
       v-for="project in projectArray" :key="project.projectId">
-      <!-- <img src="../../assets/mock-pic.png" alt="project-picture" class="project-picture"> -->
       <div class="project-icon">
         <div class="icon" :style="{ backgroundImage: `url(${project.projectIcon})` }"></div>
       </div>

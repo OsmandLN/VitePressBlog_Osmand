@@ -4,8 +4,7 @@ import type { Theme } from "vitepress"
 import DefaultTheme from "vitepress/theme"
 import "./style.css"
 import "../theme/Customization/customizedStyle.scss"
-// components
-// import SloganTyping from "./Customization/Components/SloganTyping.vue"
+
 // pages
 import About from "./Customization/Pages/AboutPage.vue"
 import Projects from "./Customization/Pages/ProjectsPage.vue"
@@ -15,7 +14,6 @@ export default {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       //     // https://vitepress.dev/guide/extending-default-theme#layout-slots
-      // "home-hero-image": () => h(SloganTyping)
     })
   },
 
