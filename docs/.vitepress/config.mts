@@ -33,6 +33,25 @@ export default defineConfig({
         link: "/projects/list"
       }
     ],
+    sidebar: [
+      {
+        // text: "Notes",
+        items: [
+          {
+            text: "note1",
+            link: "/notes/articles/note1"
+          },
+          {
+            text: "note2",
+            link: "/notes/articles/note2"
+          },
+          {
+            text: "note3",
+            link: "/notes/articles/note3"
+          }
+        ]
+      }
+    ],
     socialLinks: [
       {
         icon: "github",
