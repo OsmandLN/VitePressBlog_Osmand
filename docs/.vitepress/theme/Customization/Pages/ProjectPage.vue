@@ -49,12 +49,12 @@ const projectArray = ref([
 .projects-wrapper {
   width: 90dvw;
   // height: 90dvh;
-  margin: 0 auto;
   position: relative;
   top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 
   .project-card {
     width: 95%;

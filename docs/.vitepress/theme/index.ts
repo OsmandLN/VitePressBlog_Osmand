@@ -7,7 +7,7 @@ import "../theme/Customization/customizedStyle.scss"
 
 // pages
 import About from "./Customization/Pages/AboutPage.vue"
-import Projects from "./Customization/Pages/ProjectsPage.vue"
+import Projects from "./Customization/Pages/ProjectPage.vue"
 
 export default {
   extends: DefaultTheme,
