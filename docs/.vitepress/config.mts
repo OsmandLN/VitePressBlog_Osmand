@@ -26,7 +26,7 @@ export default defineConfig({
       },
       {
         text: "Notes",
-        link: "/notes/articles/note1"
+        link: "/notes/articles/[JS]關於非同步處理機制"
       },
       {
         text: "Projects",
@@ -39,8 +39,8 @@ export default defineConfig({
           text: "Notes",
           items: [
             {
-              text: "note1",
-              link: "/notes/articles/note1"
+              text: "[JS]關於非同步處理機制",
+              link: "/notes/articles/[JS]關於非同步處理機制"
             },
             {
               text: "note2",
