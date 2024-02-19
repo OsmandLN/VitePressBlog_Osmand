@@ -45,4 +45,8 @@
   background-image: url('../assets/bbburst_random_shapes.svg');
   background-size: cover;
   background-position: center;
+
+  &.has-sidebar{ /* 有sidebar的版面(目前是notes page有sidebar)，就不加背景圖 */
+    background-image: none;
+  }
 }
