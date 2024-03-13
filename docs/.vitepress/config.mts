@@ -26,7 +26,7 @@ export default defineConfig({
       },
       {
         text: "Notes",
-        link: "/notes/articles/JS-event_loop"
+        link: "/notes/articles/JS-async_event_loop"
       },
       {
         text: "Projects",
@@ -40,7 +40,7 @@ export default defineConfig({
           items: [
             {
               text: "[JS]關於非同步處理機制",
-              link: "/notes/articles/JS-event_loop"
+              link: "/notes/articles/JS-async_event_loop"
             },
             {
               text: "note2",
