@@ -85,6 +85,10 @@ console.log(4)
 6. 執行setTimeout這個macrotask內的程式碼，印出5。
 7. setTimeout內的resolve(6)，由於沒有.then callback接住，也就無法在接住後進一步印出，故不會在console中看到。
 
+JavaScript真的是很神奇的語言，明明只有單執行緒，卻能巧妙運用非同步機制處理這麼多事。
+
+關於非同步機制的研究到這邊暫告一段落囉，咱們下次見!
+
 <hr>
 
 參考資料:
