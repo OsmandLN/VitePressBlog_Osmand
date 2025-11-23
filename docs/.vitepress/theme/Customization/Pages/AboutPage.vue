@@ -1,12 +1,11 @@
 <template>
-  <div class="portfolio">
+  <div class="portfolio playpen-sans-cute">
     <img class="personal-photo" src="../../assets/個人照.jpg" alt="個人照">
     <div class="self-introduction-wrapper">
       <i>Self Introduction</i>
       <ul class="self-introduction">
         <li>From Tainan, Taiwan</li>
-        <li>Used to work as international sales representative and mechanical engineer.</li>
-        <li>Focusing on frontend development.</li>
+        <li>Frontend Engineer with 2+ years experience</li>
         <li>A fan of Uni-Lions(CPBL), SoftBank HAWKS(NPB), and Boston Red Sox(MLB).</li>
         <li>Interesting in watching sport games, but not so interested in playing sports. </li>
         <li>Like to assemble Gunpla.</li>
@@ -34,6 +33,15 @@
 </template>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+.playpen-sans-cute {
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .portfolio {
   width: 100dvw;
   // height: 100dvh;
