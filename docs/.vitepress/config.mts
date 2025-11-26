@@ -26,7 +26,7 @@ export default defineConfig({
       },
       {
         text: "Notes",
-        link: "/notes/articles/JS-async_event_loop"
+        link: "/notes/articles/note-cover"
       },
       {
         text: "Projects",
