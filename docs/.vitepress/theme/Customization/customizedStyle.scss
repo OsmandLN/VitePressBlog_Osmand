@@ -22,11 +22,6 @@
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-
-    &::before {
-      content: url('../assets/bolt-solid.svg');
-      margin-right: 5px;
-    }
   }
 }
 
@@ -35,7 +30,7 @@
   &.VPNavBarSocialLinks {
     &.social-links {
       &::before {
-        background-color: grey;
+        background-color: lightgrey;
       }
     }
   }
