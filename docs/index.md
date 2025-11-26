@@ -7,9 +7,9 @@ hero:
 
 features:
   - title: Notes
-    details: 紀錄一些技術的東東
+    details: Some notes for programming.
     link: /notes/articles/note-cover
   - title: Projects
-    details: 放一些實作的東東 
+    details: Some projects for practicing. 
     link: /projects/list
 ---

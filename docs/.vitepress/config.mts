@@ -11,7 +11,7 @@ export default defineConfig({
         href: "/favicon.ico"
       }
     ]
-  ], // 網站分頁頁籤icon
+  ],
   description: "Fort built with VitePress.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

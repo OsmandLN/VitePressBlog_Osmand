@@ -18,7 +18,6 @@ export default {
   },
 
   enhanceApp({ app, router, siteData }) {
-    // 導入自訂布局
     app.component("about", About)
     app.component("projects", Projects)
   }

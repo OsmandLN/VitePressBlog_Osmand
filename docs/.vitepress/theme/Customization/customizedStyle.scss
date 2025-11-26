@@ -25,7 +25,7 @@
   }
 }
 
-/* social link 左邊線 */
+/* social link left border */
 .VPSocialLinks {
   &.VPNavBarSocialLinks {
     &.social-links {
@@ -41,7 +41,7 @@
   background-size: cover;
   background-position: center;
 
-  &.has-sidebar{ /* 有sidebar的版面(目前是notes page有sidebar)，就不加背景圖 */
+  &.has-sidebar{ /* If there is sidebar, no background image added. */
     background-image: none;
   }
 }

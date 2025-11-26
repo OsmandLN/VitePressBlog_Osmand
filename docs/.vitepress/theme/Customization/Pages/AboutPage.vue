@@ -1,6 +1,6 @@
 <template>
   <div class="portfolio playpen-sans-cute">
-    <img class="personal-photo" src="../../assets/個人照.jpg" alt="個人照">
+    <img class="personal-photo" src="../../assets/osmand_lien-photo.jpg" alt="osmand_lien-photo">
     <div class="self-introduction-wrapper">
       <i>Self Introduction</i>
       <ul class="self-introduction">
