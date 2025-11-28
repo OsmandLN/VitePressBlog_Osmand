@@ -6,7 +6,7 @@
       <ul class="self-introduction">
         <li>From Tainan, Taiwan</li>
         <li>Frontend Engineer with 2+ years experience</li>
-        <li>A fan of Uni-Lions(CPBL), SoftBank HAWKS(NPB), and Boston Red Sox(MLB).</li>
+        <li>A fan of Uni-Lions (CPBL) and Boston Red Sox (MLB).</li>
         <li>Interesting in watching sport games, but not so interested in playing sports. </li>
         <li>Like to assemble Gunpla.</li>
       </ul>
@@ -17,12 +17,11 @@
         <li>HTML</li>
         <li>CSS</li>
         <li>SCSS</li>
-        <li>JavaScript(ES6+)</li>
-        <li>TypeScript(Beginner)</li>
+        <li>JavaScript (ES6+)</li>
+        <li>TypeScript</li>
         <li>Node.js</li>
-        <li>Vue.js(Vue 2/Vue 3)</li>
-        <li>React.js(some hooks)</li>
-        <li>Element/Element Plus</li>
+        <li>Vue.js (Vue 2 / Vue 3)</li>
+        <li>Element / Element Plus</li>
         <li>Bootstrap</li>
         <li>Leaflet</li>
         <li>Echarts</li>
