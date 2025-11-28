@@ -1,6 +1,5 @@
 import { defineConfig } from "vitepress"
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/VitePressBlog_Osmand/',
   title: "FE Fort",
@@ -15,7 +14,6 @@ export default defineConfig({
   ],
   description: "Fort built with VitePress.",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       {
         text: "Home",
