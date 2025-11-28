@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base:'/VitePressBlog_Osmand/',
+  base: '/VitePressBlog_Osmand/',
   title: "FE Fort",
   head: [
     [
