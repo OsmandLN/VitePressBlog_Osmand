@@ -1,3 +1,19 @@
+<template>
+  <div class="projects-wrapper">
+    <a :href="project.projectUrl" target="_blank" rel="noreferrer noopenner" class="project-card"
+      v-for="project in projectArray" :key="project.projectId">
+      <div class="project-icon">
+        <VueJS v-if="project.projectIcon === 'VueJS'" />
+        <NodeJS v-else-if="project.projectIcon === 'NodeJS'" />
+      </div>
+      <span class="project-name">{{ project.projectName }}</span>
+      <p class="project-description">
+        {{ project.projectDescription }}
+      </p>
+    </a>
+  </div>
+</template>
+
 <script setup>
 import { ref } from 'vue';
 // import project icons
@@ -28,22 +44,6 @@ const projectArray = ref([
   },
 ])
 </script>
-
-<template>
-  <div class="projects-wrapper">
-    <a :href="project.projectUrl" target="_blank" rel="noreferrer noopenner" class="project-card"
-      v-for="project in projectArray" :key="project.projectId">
-      <div class="project-icon">
-        <VueJS v-if="project.projectIcon === 'VueJS'" />
-        <NodeJS v-else-if="project.projectIcon === 'NodeJS'" />
-      </div>
-      <span class="project-name">{{ project.projectName }}</span>
-      <p class="project-description">
-        {{ project.projectDescription }}
-      </p>
-    </a>
-  </div>
-</template>
 
 <style lang="scss" scoped>
 .projects-wrapper {
