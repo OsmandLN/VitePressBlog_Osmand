@@ -1,14 +1,14 @@
 <template>
   <div class="projects-wrapper">
-    <a :href="project.projectUrl" target="_blank" rel="noreferrer noopenner" class="project-card"
-      v-for="project in projectArray" :key="project.projectId">
+    <a :href="project.url" target="_blank" rel="noreferrer noopenner" class="project-card"
+      v-for="project in projectArray" :key="project.id">
       <div class="project-icon">
-        <VueJS v-if="project.projectIcon === 'VueJS'" />
-        <NodeJS v-else-if="project.projectIcon === 'NodeJS'" />
+        <VueJS v-if="project.icon === 'VueJS'" />
+        <NodeJS v-else-if="project.icon === 'NodeJS'" />
       </div>
-      <span class="project-name">{{ project.projectName }}</span>
+      <span class="project-name">{{ project.name }}</span>
       <p class="project-description">
-        {{ project.projectDescription }}
+        {{ project.description }}
       </p>
     </a>
   </div>
@@ -22,25 +22,25 @@ import NodeJS from '../Components/icons/NodeJS.vue';
 
 const projectArray = ref([
   {
-    projectId: 1,
-    projectIcon: 'VueJS',
-    projectName: 'TechPro-official',
-    projectDescription: 'Tech company website built with Vue.js.',
-    projectUrl: 'https://github.com/OsmandLN/TechPro-official'
+    id: 1,
+    icon: 'VueJS',
+    name: 'TechPro-official',
+    description: 'Tech company website built with Vue.js.',
+    url: 'https://github.com/OsmandLN/TechPro-official'
   },
   {
-    projectId: 2,
-    projectIcon: 'VueJS',
-    projectName: 'weather_info_vue_composition',
-    projectDescription: 'Real time weather information website built with composition API.',
-    projectUrl: 'https://github.com/OsmandLN/weather_info_vue_composition'
+    id: 2,
+    icon: 'VueJS',
+    name: 'weather_info_vue_composition',
+    description: 'Real time weather information website built with composition API.',
+    url: 'https://github.com/OsmandLN/weather_info_vue_composition'
   },
   {
-    projectId: 3,
-    projectIcon: 'NodeJS',
-    projectName: 'BASEBALLSANITY',
-    projectDescription: 'Company website (baseball related) built with Express Handlebars.',
-    projectUrl: 'https://github.com/OsmandLN/Brand_website_project'
+    id: 3,
+    icon: 'NodeJS',
+    name: 'BASEBALLSANITY',
+    description: 'Company website (baseball related) built with Express Handlebars.',
+    url: 'https://github.com/OsmandLN/Brand_website_project'
   },
 ])
 </script>
