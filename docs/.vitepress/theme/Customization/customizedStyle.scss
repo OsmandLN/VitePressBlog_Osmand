@@ -3,21 +3,25 @@
   .title {
     font-size: 24px;
     /* css text gradient */
-    background: -webkit-linear-gradient(120deg,
-        orange 50%,
-        gold,
-        yellow,
-        lightyellow);
+    background: -webkit-linear-gradient(
+      120deg,
+      orange 50%,
+      gold,
+      yellow,
+      lightyellow
+    );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
     &:hover {
-      background: -webkit-linear-gradient(0deg,
-          orange 50%,
-          gold,
-          yellow,
-          lightyellow);
+      background: -webkit-linear-gradient(
+        0deg,
+        orange 50%,
+        gold,
+        yellow,
+        lightyellow
+      );
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -37,11 +41,17 @@
 }
 
 .VPContent {
-  background-image: url('../assets/bbburst_random_shapes.svg');
+  background-image: url("../assets/bbburst_random_shapes.svg");
   background-size: cover;
   background-position: center;
 
-  &.has-sidebar{ /* If there is sidebar, no background image added. */
+  &.has-sidebar {
+    /* If there is sidebar, no background image added. */
     background-image: none;
   }
+}
+
+.text-wrap {
+  white-space: normal !important;
+  word-wrap: break-word;
 }

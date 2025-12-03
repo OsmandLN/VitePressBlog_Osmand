@@ -1,24 +1,31 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from "vue"
-import type { Theme } from "vitepress"
-import DefaultTheme from "vitepress/theme"
-import "./style.css"
-import "../theme/Customization/customizedStyle.scss"
+import { h } from "vue";
+import type { Theme } from "vitepress";
+import DefaultTheme from "vitepress/theme";
+import "./style.css";
+import "../theme/Customization/customizedStyle.scss";
+import "vuetify/styles";
+import * as components from "vuetify/components";
+import * as directives from "vuetify/directives";
+import { createVuetify } from "vuetify";
 
 // pages
-import About from "./Customization/Pages/AboutPage.vue"
-import Projects from "./Customization/Pages/ProjectPage.vue"
+import About from "./Customization/Pages/AboutPage.vue";
+import Projects from "./Customization/Pages/ProjectPage.vue";
+
+const vuetify = createVuetify({ components, directives });
 
 export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
-    })
+    });
   },
 
   enhanceApp({ app, router, siteData }) {
-    app.component("about", About)
-    app.component("projects", Projects)
-  }
-} satisfies Theme
+    app.component("about", About);
+    app.component("projects", Projects);
+    app.use(vuetify);
+  },
+} satisfies Theme;
