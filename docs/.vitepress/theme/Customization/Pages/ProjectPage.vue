@@ -2,8 +2,8 @@
   <v-container class="projects-wrapper pa-6">
     <v-row>
       <v-col cols="12" md="4" v-for="project in projectArray" :key="project.id">
-        <v-card height="200px" position="relative">
-          <v-img></v-img>
+        <v-card min-height="450px" position="relative">
+          <v-img height="200px" :src="project.picture" cover></v-img>
           <v-card-title>
             {{ project.name }}
           </v-card-title>
@@ -43,6 +43,7 @@ const projectArray = ref([
     description: "Tech company website built with Vue.js.",
     techStack: ["VueJS", "VueX", "SCSS", "Leaflet"],
     url: "https://github.com/OsmandLN/TechPro-official",
+    picture: "/images/projects/TechPro-official.png",
   },
   {
     id: 2,
@@ -52,6 +53,7 @@ const projectArray = ref([
       "Real time weather information website built with composition API.",
     techStack: ["VueJS", "TypeScript", "Vite"],
     url: "https://github.com/OsmandLN/weather_info_vue_composition",
+    picture: "/images/projects/weather_info_vue_composition.png",
   },
   {
     id: 3,
@@ -61,6 +63,7 @@ const projectArray = ref([
       "Company website (baseball related) built with Express Handlebars.",
     techStack: ["JavaScript", "ExpressJS", "SCSS"],
     url: "https://github.com/OsmandLN/Brand_website_project",
+    picture: "/images/projects/Baseballsanity.png",
   },
 ]);
 </script>
