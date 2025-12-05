@@ -3,18 +3,18 @@
     <v-row>
       <v-col cols="12" md="4" v-for="project in projectArray" :key="project.id">
         <v-card height="200px" position="relative">
-          <div>
-            <!-- TODO: write a component to handle icons (use props to control icons)  -->
-            <!-- <VueJS v-if="project.icon === 'VueJS'" /> -->
-            <!-- <NodeJS v-else-if="project.icon === 'NodeJS'" /> -->
-          </div>
           <v-img></v-img>
           <v-card-title>
             {{ project.name }}
           </v-card-title>
-          <v-card-subtitle class="text-wrap">
+          <v-card-subtitle class="text-wrap mb-3">
             {{ project.description }}
           </v-card-subtitle>
+          <div class="px-2">
+            <v-chip class="mx-1" v-for="tech in project.techStack" :key="tech">
+              {{ tech }}
+            </v-chip>
+          </div>
           <v-card-actions class="d-flex justify-end">
             <v-btn
               :href="project.url"
@@ -34,9 +34,6 @@
 
 <script setup>
 import { ref } from "vue";
-// import project icons
-import VueJS from "../Components/icons/VueJS.vue";
-import NodeJS from "../Components/icons/NodeJS.vue";
 
 const projectArray = ref([
   {
@@ -44,6 +41,7 @@ const projectArray = ref([
     icon: "VueJS",
     name: "TechPro-official",
     description: "Tech company website built with Vue.js.",
+    techStack: ["VueJS", "VueX", "SCSS", "Leaflet"],
     url: "https://github.com/OsmandLN/TechPro-official",
   },
   {
@@ -52,6 +50,7 @@ const projectArray = ref([
     name: "weather_info_vue_composition",
     description:
       "Real time weather information website built with composition API.",
+    techStack: ["VueJS", "TypeScript", "Vite"],
     url: "https://github.com/OsmandLN/weather_info_vue_composition",
   },
   {
@@ -60,6 +59,7 @@ const projectArray = ref([
     name: "BASEBALLSANITY",
     description:
       "Company website (baseball related) built with Express Handlebars.",
+    techStack: ["JavaScript", "ExpressJS", "SCSS"],
     url: "https://github.com/OsmandLN/Brand_website_project",
   },
 ]);
