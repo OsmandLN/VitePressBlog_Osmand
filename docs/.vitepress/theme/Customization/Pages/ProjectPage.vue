@@ -33,7 +33,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref } from "vue"
 
 const projectArray = ref([
   {
@@ -65,7 +65,7 @@ const projectArray = ref([
     url: "https://github.com/OsmandLN/Brand_website_project",
     picture: "/images/projects/Baseballsanity.png",
   },
-]);
+])
 </script>
 
 <style lang="scss" scoped>
