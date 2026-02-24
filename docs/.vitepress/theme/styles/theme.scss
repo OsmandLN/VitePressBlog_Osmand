@@ -29,6 +29,12 @@
   }
 }
 
+.VPNavBarMenuLink{
+  &.active{
+   color:gold 
+  }
+}
+
 /* social link left border */
 .VPSocialLinks {
   &.VPNavBarSocialLinks {
@@ -41,7 +47,6 @@
 }
 
 .VPContent {
-  background-image: url("../assets/bbburst_random_shapes.svg");
   background-size: cover;
   background-position: center;
 
@@ -55,3 +60,4 @@
   white-space: normal !important;
   word-wrap: break-word;
 }
+

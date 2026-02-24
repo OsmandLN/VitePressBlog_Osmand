@@ -7,7 +7,7 @@ export default defineConfig({
     },
   },
   base: "/",
-  title: "FE Fort",
+  title: "Osmand Lien",
   head: [
     [
       "link",
@@ -17,42 +17,34 @@ export default defineConfig({
       },
     ],
   ],
-  description: "Fort built with VitePress.",
+  description: "Personal Website built with VitePress.",
   themeConfig: {
     nav: [
       {
-        text: "Home",
-        link: "/index",
-      },
-      {
-        text: "About",
-        link: "/about/introduction",
-      },
-      {
-        text: "Notes",
-        link: "/notes/articles/note-cover",
-      },
-      {
         text: "Projects",
-        link: "/projects/list",
+        link: "/projects",
+      },
+       {
+        text: "Notes",
+        link: "/notes/note-cover",
       },
     ],
     sidebar: {
-      "/notes/articles/": [
+      "/notes/": [
         {
           text: "Notes",
           items: [
             {
               text: "[JS]關於非同步處理機制",
-              link: "/notes/articles/JS-async_event_loop",
+              link: "/notes/JS-async_event_loop",
             },
             {
               text: "note2",
-              link: "/notes/articles/note2",
+              link: "/notes/note2",
             },
             {
               text: "note3",
-              link: "/notes/articles/note3",
+              link: "/notes/note3",
             },
           ],
         },
@@ -70,7 +62,7 @@ export default defineConfig({
     ],
 
     footer: {
-      copyright: "Copyright &copy; 2024- Osmand Lien",
+      copyright: "© 2026 Osmand Lien. All rights reserved.",
     },
   },
 });
