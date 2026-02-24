@@ -1,16 +1,13 @@
 <template>
   <section class="hero">
     <div class="bg-glow"></div>
-
     <div class="content">
       <h1>
         Hi, I'm <span class="accent">Osmand</span>.
       </h1>
-
       <p class="subtitle py-2">
         Frontend Engineer · Vue · Vite · UI Architecture
       </p>
-
       <div class="actions">
         <a class="btn primary" href="/projects">View Projects</a>
         <a class="btn ghost" href="https://github.com/OsmandLN" target="_blank">
@@ -28,7 +25,6 @@
   min-height: 80vh;
   display: grid;
   place-items: center;
-  /* overflow: hidden; */
 }
 
 .bg-glow {

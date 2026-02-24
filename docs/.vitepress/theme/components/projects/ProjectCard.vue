@@ -3,14 +3,12 @@
     <v-img height="200px" :src="props.project.picture" cover></v-img>
     <div>
       <h3>🚀 {{ project.name }}</h3>
-
       <p>{{ project.description }}</p>
       <div>
         <p class="mb-0">Tech Stack</p>
         <v-chip v-for="(tech, index) in project.techStack" :key="tech"
           :class="{ 'mr-1': index < project.techStack.length - 1 }">{{ tech }}</v-chip>
       </div>
-
       <div>
         <a :href="project.demoUrl" target="_blank" rel="noopener noreferrer"
           v-if="project.demoUrl && project.demoUrl !== '-'">Live Demo →</a>
