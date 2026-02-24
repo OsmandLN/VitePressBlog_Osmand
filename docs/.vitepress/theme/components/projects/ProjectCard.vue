@@ -44,7 +44,7 @@ const props = defineProps({
 })
 </script>
 
-<style>
+<style scoped lang="scss">
 .project-card {
   padding: 1.4rem;
   border-radius: 16px;
@@ -57,15 +57,19 @@ const props = defineProps({
   color: var(--vp-c-text-1)
 }
 
-.project-card:hover {
-  transform: translateY(-6px);
-  border-color: rgb(240, 146, 5);
-  box-shadow: 0 10px 30px rgba(240, 146, 5, 0.4);
+.project-card {
+  &:hover {
+    transform: translateY(-6px);
+    border-color: rgb(240, 146, 5);
+    box-shadow: 0 10px 30px rgba(240, 146, 5, 0.4);
+  }
 }
 
-.project-card a {
-  display: inline-block;
-  margin-top: .6rem;
-  font-weight: 600;
+.project-card {
+  a {
+    display: inline-block;
+    margin-top: .6rem;
+    font-weight: 600;
+  }
 }
 </style>
