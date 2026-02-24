@@ -22,7 +22,7 @@
   </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .hero {
   position: relative;
   min-height: 80vh;
@@ -95,16 +95,20 @@ h1 {
   color: #000;
 }
 
-.primary:hover {
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
-  transform: translateY(-2px);
+.primary {
+  &:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    transform: translateY(-2px);
+  }
 }
 
 .ghost {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.ghost:hover {
-  background: rgba(255, 255, 255, 0.08);
+.ghost {
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
 }
 </style>

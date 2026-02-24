@@ -53,12 +53,9 @@ A curated collection of my selected work, focusing on **frontend architecture, U
 ## Crafted
 
 <div>
-
-<div>
-<ProjectCard v-for="project in projectArray" :key="project.id" :project="project"/>
-</div>
-
-
+  <div>
+    <ProjectCard v-for="project in projectArray" :key="project.id" :project="project"/>
+  </div>
 </div>
 
 <!-- --- -->
